@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class RevChar {
+    static void rev(Scanner sc, int n) {
+        if (n == 0) return;
+
+        String line = sc.nextLine();
+        char[] arr = line.toCharArray();
+
+        rev(sc, n - 1);
+        System.out.println(arr);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        rev(sc, n);
+
+    }
+}
