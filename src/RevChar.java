@@ -5,7 +5,7 @@ public class RevChar {
         if (n == 0) return;
 
         String line = sc.nextLine();
-        char[] arr = line.toCharArray();
+        
 
         rev(sc, n - 1);
         System.out.println(arr);
