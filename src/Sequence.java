@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Sequence {
 
-    // Рекурсивная генерация всех последовательностей
+    
     static void gen(String s, int pos, int n, int k) {
         if (pos == n) {
-            System.out.println(s.trim());   // выводим готовую строку
+            System.out.println(s.trim());  
             return;
         }
         for (int i = 1; i <= k; i++) {
-            gen(s + i + " ", pos + 1, n, k);   // добавляем число и пробел
+            gen(s + i + " ", pos + 1, n, k);   
         }
     }
 
@@ -18,6 +18,6 @@ public class Sequence {
         int n = sc.nextInt();
         int k = sc.nextInt();
 
-        gen("", 0, n, k);   // начинаем с пустой строки
+        gen("", 0, n, k);   
     }
 }
