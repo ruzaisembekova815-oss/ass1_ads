@@ -40,7 +40,7 @@ public class Square {
         int[][] mat = new int[n][n];
         fillSpiral(mat, 0, 0, n - 1, n - 1, 1);
 
-        // Вывод матрицы
+       
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(mat[i][j]);
