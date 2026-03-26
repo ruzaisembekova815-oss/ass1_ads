@@ -5,9 +5,9 @@ public class SumOfElements {
 
     public static int sumOfFirstNElements(int[] arr, int n) {
         if (n <= 0) {
-            return 0;                          // базовый случай
+            return 0;                          
         }
-        return arr[n - 1] + sumOfFirstNElements(arr, n - 1); // рекурсивный шаг
+        return arr[n - 1] + sumOfFirstNElements(arr, n - 1); 
     }
 
     public static void main(String[] args) {
