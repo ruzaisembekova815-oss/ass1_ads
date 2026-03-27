@@ -8,7 +8,7 @@ public class RevChar {
         
 
         rev(sc, n - 1);
-        System.out.println(arr);
+        System.out.println(line);
     }
 
     public static void main(String[] args) {
